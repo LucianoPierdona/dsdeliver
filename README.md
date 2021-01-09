@@ -1,6 +1,7 @@
 # DS Delivery
 
 ### Frontend made with React using Typescript and Backend made with Java using Spring.
+### Project made at SDS2.
 
 ### Live Demo: <a href="https://luciano-dsdeliver.netlify.app/">Click Here</a>
 
