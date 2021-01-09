@@ -1,4 +1,5 @@
 import { Product } from '../types';
+import { formatPrice } from './helpers';
 
 interface Props extends Product {
   onSelectProduct: (product: Product) => void;
@@ -14,15 +15,6 @@ const ProductCard: React.FC<Props> = ({
   onSelectProduct,
   isSelected,
 }) => {
-  function formatPrice(price: number) {
-    const formatter = new Intl.NumberFormat('pt-br', {
-      style: 'currency',
-      currency: 'BRL',
-      minimumFractionDigits: 2,
-    });
-
-    return formatter.format(price);
-  }
   return (
     <div
       className={`order-card-container ${isSelected ? 'selected' : ''}`}
